@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  db:
+    build: .
+    environment:
+      POSTGRES_PASSWORD: postgrespass
+      #POSTGRES_USER: postgres
+      #POSTGRES_DB: postgres
+    ports:
+      - 5430:5432
+    volumes:
+      - ./initdb.d:/docker-entrypoint-initdb.d
+      - db-data:/var/lib/postgresql/data
+      - ./sql:/root/sql
+
+volumes:
+  db-data:
