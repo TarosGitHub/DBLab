@@ -1,4 +1,4 @@
-# MyPostgres
+# zerosql
 
 ## PostgreSQL on Docker
 
