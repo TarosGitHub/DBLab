@@ -100,3 +100,9 @@ Execute SQL file.
 ```
 =# \i <SQL file>
 ```
+
+### Connect a database
+
+```
+=# \c <database>
+```
