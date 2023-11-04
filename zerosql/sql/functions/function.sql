@@ -54,3 +54,17 @@ SUMとAVGは数値型にのみ適用可能。
 */
 SELECT COUNT(DISTINCT shohin_bunrui)
 FROM Shohin;
+
+/*
+Note:
+集約関数を使った場合、SELECT句に書くことができる要素は以下の３つのみ。
+
+* 定数
+* 集約関数
+* GROUP BY句で指定した列名（集約キー）
+*/
+
+/*
+Note:
+集約関数を書ける場所は SELECT句、HAVING句、ORDER BY句 のみ。
+*/
